@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">ColorMyViews</string>
+    <string name="app_name">Mach mich bunt!</string>
+    <string name="box_one">Erste Box</string>
+    <string name="box_two">Zweite Box</string>
+    <string name="box_three">Dritte Box</string>
+    <string name="box_four">Vierte Box</string>
+    <string name="box_five">Fünfte Box</string>
 </resources>
