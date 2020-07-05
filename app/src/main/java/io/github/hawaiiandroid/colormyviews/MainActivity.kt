@@ -3,8 +3,10 @@ package io.github.hawaiiandroid.colormyviews
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +23,11 @@ class MainActivity : AppCompatActivity() {
             R.id.box_three_text -> view.setBackgroundColor(Color.BLUE)
             R.id.box_four_text -> view.setBackgroundColor(Color.MAGENTA)
             R.id.box_five_text -> view.setBackgroundColor(Color.BLUE)
+
+            R.id.green_button -> box_three_text.setBackgroundResource(R.color.my_green)
+            R.id.yellow_button -> box_four_text.setBackgroundResource(R.color.my_yellow)
+            R.id.red_button -> box_five_text.setBackgroundResource(R.color.my_red)
+
             else -> view.setBackgroundColor(Color.LTGRAY)
         }
     }
@@ -34,8 +41,22 @@ class MainActivity : AppCompatActivity() {
 
         val constraintLayout = findViewById<View>(R.id.constraint_layout)
 
+        val redButton = findViewById<Button>(R.id.red_button)
+        val yellowButton = findViewById<Button>(R.id.yellow_button)
+        val greenButton = findViewById<Button>(R.id.green_button)
+
         val clickableViews: List<View> =
-            listOf(boxOneText, boxTwoText, boxThreeText, boxFourText, boxFiveText, constraintLayout)
+            listOf(
+                boxOneText,
+                boxTwoText,
+                boxThreeText,
+                boxFourText,
+                boxFiveText,
+                constraintLayout,
+                redButton,
+                yellowButton,
+                greenButton
+            )
 
         for (item in clickableViews) {
             item.setOnClickListener { colorize(it) }
