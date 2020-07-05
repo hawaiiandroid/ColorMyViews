@@ -7,4 +7,7 @@
     <string name="box_five">Fünfte Box</string>
     <string name="how_to_play">Spieleanleitung:</string>
     <string name="how_to_play_description">Drücken Sie auf den Bildschirm und auf die Boxen.</string>
+    <string name="button_red">Rot</string>
+    <string name="button_yellow">Gelb</string>
+    <string name="button_green">Grün</string>
 </resources>
