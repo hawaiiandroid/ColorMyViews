@@ -5,4 +5,6 @@
     <string name="box_three">Dritte Box</string>
     <string name="box_four">Vierte Box</string>
     <string name="box_five">Fünfte Box</string>
+    <string name="how_to_play">Spieleanleitung:</string>
+    <string name="how_to_play_description">Drücken Sie auf den Bildschirm und auf die Boxen.</string>
 </resources>
